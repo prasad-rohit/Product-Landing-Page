@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+/* Universal CSS */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
+
+body {
+  background-color: #f3f4f5;
+}
+
+/* First Page CSS */
 
 ul {
   list-style-type: none;
@@ -70,19 +78,40 @@ svg {
   top: 80vh;
 }
 
+/* Features Section CSS */
+
 .feature {
   display: flex;
-  padding-top: 5rem;
+  padding-top: 4.5rem;
   justify-content: space-around;
 }
 
 .feature-containers {
-  width: 15%;
+  width: 18%;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 10px;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  background: rgba(134, 128, 128, 0.061);
 }
 
 .feature-containers img {
   display: block;
   margin: 0 auto;
   width: 40%;
+}
+
+.feature-containers span {
+  font-weight: bold;
+}
+
+.feature-containers p {
+  font-size: 0.75rem;
+  padding: 1rem;
+}
+
+/* Pro Landing Features CSS */
+
+.prolandingfeatures-container {
+  display: flex;
 }
